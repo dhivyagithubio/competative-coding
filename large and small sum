@@ -1,0 +1,12 @@
+def lss(arr):    #large and small sum
+    n=len(arr)
+    e=arr[0:n:2]
+    o=arr[1:n:2]
+    print(e)
+    print(o)
+    m=sorted(e,reverse=True)
+    n=sorted(o)
+    print(m)
+    print(n)
+    ans=m[1]+n[1]
+    print(ans)
