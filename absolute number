@@ -1,0 +1,10 @@
+def abso(arr,num,dif): #absolute number
+    c=0
+    for i in arr:
+        if abs(i-num)<=dif:
+            c=c+1
+    if c==0:
+        return -1
+    else:
+        return c
+        
