@@ -1,0 +1,17 @@
+def base(num,n): # nbase code
+    remi=[]
+    while num!=0:
+        rem=num%n
+        print(rem)
+        remi.append(rem)
+        num=num//n
+        #conversion :
+    result=''
+    for i in remi:
+        if i>9:
+            c=chr(i+55)
+            result=result+c
+        else:
+            c=str(i)
+            result=result+c
+    return result[::-1]
