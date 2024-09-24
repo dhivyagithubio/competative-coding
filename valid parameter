@@ -1,0 +1,13 @@
+def validpara(p):
+    dict={'(':')','{':'}','[':']'}
+    stack=[]
+    for i in p:
+        if i in dict:
+            stack.append(dict[i])
+        else:
+            if stack[-1]==i:
+                stack.pop()
+    if len(stack)==0:
+        return "valid"
+    else:
+        return "invalid"
