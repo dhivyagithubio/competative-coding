@@ -1,0 +1,9 @@
+def pro(arr,s):   #product of smallest pair
+    m=sorted(arr)
+    print(m)
+    ans=m[0]+m[1]
+    print(ans)
+    if ans<s:
+        return m[0]*m[1]
+    else:
+        return 0
