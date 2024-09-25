@@ -1,0 +1,27 @@
+def taxcal(sal):   #tax calculation
+    if sal<0:
+        return -1
+    total=0
+    if 5001>=sal>=10000:
+        tax=sal*0.05
+        con=10+tax
+        total=sal-con
+    elif 10001<=sal<=50000:
+        tax=sal*0.1
+        con=100+tax
+        total=sal-con
+    elif 50001<=sal<=100000:
+        tax=sal*0.15
+        con=150+tax
+        total=sal-con
+    elif 100000<=sal<=5000000:
+        tax=sal*0.20
+        con=600+tax
+        total=sal-con
+    elif sal>=5000000:
+        print("salary limited exceed")
+    else:
+        return 0
+    return total
+    
+    
