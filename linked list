@@ -1,0 +1,41 @@
+class linkedlist:
+    class Node:
+        def _init_(self,data):
+            self.data=data
+            self.next=None
+    def _init_(self):
+        self.head=None
+    def insertbegg(self,data):
+        newnode=linkedlist.Node(data)
+        newnode.next=self.head
+        self.head=newnode
+    def insertend(self,data):
+        while current:
+            current=current.next
+            current.next=newnode
+    def traverse(self):
+        current=self.head
+        while current:
+            print(current.data,end='-->')
+            current=current.next
+        print(None)
+    def delbynode(self,val):
+        if self.head==None:
+            return "List is empty"
+        current=self.head
+        while current.next:
+            if current.next.data==val:
+                break
+            current=current.next
+        if current==None:
+            return "Node doesn't exist"
+        else:
+            current.next=current.next.next
+    def hasCycle(head):
+        t,r=head
+        while r and r.next:
+            t=t.next
+            r=r.next.next
+            if r==t:
+                return True
+        return False
