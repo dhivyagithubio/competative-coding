@@ -1,0 +1,14 @@
+class stack:
+    def _init_(self):
+        self.s1=[]
+        self.temp=[]
+    def push(self,val):
+        while s1:
+            popped=s1.pop()
+            temp.append(popped)
+        s1.append(val)
+        while temp:
+            poped=temp.pop()
+            s1.append(poped)
+    def pop(self):
+        return s1.pop() if s1 else "No elements"
