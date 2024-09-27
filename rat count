@@ -1,0 +1,11 @@
+def ratcount(r,arr,unit,n):  #
+    if n==0:
+        return -1
+    totalfoodreq = r*unit
+    result=0
+    for i in range(0,n):
+        result = result + arr[i]  #2
+        if result>=totalfoodreq:
+            break
+    return i+1
+        
