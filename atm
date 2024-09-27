@@ -1,0 +1,31 @@
+def atm():
+    print=("welcome to atm")
+    pins={"jwalitha":"4555","sharath":"7895","kavya":"0011"}
+    bal={"jwalitha":6000,"sharath":700000,"kavya":80000}
+    name=input("enter your name:")
+    pin=input("enter your pin: ")
+    if pins[name]!=pin:
+        return "invalid pin"
+    while True:
+        choices = "Option 1: Withdrawal"
+        print(choices)
+        choice=int(input("enter choice:"))
+        if choice==1:
+            print("withdraw")
+            w=int(input("enter the withdrawal amount:"))
+            if w>bal[name]:
+                print("insufficient balance")
+            else:
+                bal[name]=bal[name]-w
+        elif choice==2:
+            print("deposit ")
+            d=int(input("enter the deposit amount"))
+            bal[name]=bal[name]+d
+        elif choice==3:
+            print(int(input("balance amount is :",bal[name])))
+        elif choice==4:
+            print("if there is 1 lakh they have a gift")
+        elif choice==5:
+            break
+            
+            
